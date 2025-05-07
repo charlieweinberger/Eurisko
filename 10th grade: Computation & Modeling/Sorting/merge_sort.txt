@@ -1,0 +1,40 @@
+input list: [4, 8, 7, 7, 4, 2, 3, 1]
+break it in half: [4, 8, 7, 7] [4, 2, 3, 1]
+use merge_sort recursively to sort the two halves
+
+    input list: [4, 8, 7, 7]
+    break it in half: [4, 8] [7, 7]
+    use merge_sort recursively to sort the two halves
+
+        input list: [4, 8]
+        break it in half: [4] [8]
+        the two halves have only one element each, so they are already sorted
+        so we can merge them to get [4, 8]
+
+        input list: [7, 7]
+        break it in half: [7] [7]
+        the two halves have only one element each, so they are already sorted
+        so we can merge them to get [7, 7]
+
+    now we have two sorted lists [4, 8] and [7, 7]
+    so we can merge them to get [4, 7, 7, 8]
+
+    input list: [4, 2, 3, 1]
+    break it in half: [4, 2] [3, 1]
+    use merge_sort recursively to sort the two halves
+
+        input list: [4, 2]
+        break it in half: [4] [2]
+        the two halves have only one element each, so they are already sorted
+        so we can merge them to get [4, 2]
+
+        input list: [3, 1]
+        break it in half: [3] [1]
+        the two halves have only one element each, so they are already sorted
+        so we can merge them to get [3, 1]
+
+    now we have two sorted lists [4, 2] and [3, 1]
+    so we can merge them to get [1, 2, 3, 4]
+
+now we have two sorted lists [4, 7, 7, 8] and [1, 2, 3, 4]
+so we can merge them to get [1, 2, 3, 4, 4, 7, 7, 8]

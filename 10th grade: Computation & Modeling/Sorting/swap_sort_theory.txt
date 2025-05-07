@@ -1,0 +1,19 @@
+a. Given a list of 5 elements, what’s the least number of swaps that could occur? What about for a list of n elements? Explain why.
+
+  The least number of swaps that could occur, given a list of n elements, is 0. This will happen when a list is alreadu fully sorted.
+
+b. Given a list of 5 elements, what’s the greatest number of swaps that could occur? What about for a list of n elements? Explain why.
+
+  The greatest number of swaps that could occur, given a list of n elements, is (n-1) + (n-2) + ... + 0. For n=5, we get 10.
+
+  The most number of swaps that could occur occurs to a list that is the farthest from least to greatest. This list would be a list that is ordered greatest to least.
+
+  On the first pass, the first and biggest number swaps with every other number, which gives us n-1 swaps. On the second pass, the second biggst number switches with every nuber except the last number, which gives us n-2 swaps. This happens until the list is completely organized.
+
+c. The number of swaps performed by swap sort on each pass is always a decreasing sequence.
+
+  This state is false. For example, take [10, 1, 2, 3, 4, 5]. For every pass, one swap sort is preformed. Since one is not less than one, there is not a decreasing number of swaps.
+
+d. On two consecutive passes, the number of swaps performed by swap sort is never equal.
+
+  This statement is false. Take [10, 1, 2, 3, 4, 5] again. During the first pass, one swap sort is preformed. During the second pass, one swap sort is preformed.
