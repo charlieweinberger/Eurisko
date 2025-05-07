@@ -1,3 +1,5 @@
+.gitmodules
+.gitignore
 .DS_Store
 **/.env*
 **/__pycache__/
